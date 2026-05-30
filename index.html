@@ -1,0 +1,58 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <nav></nav>
+
+    <!-- hero section -->
+    <section class="hero-container">
+      <div class="hero-card">
+        <p>New Arrival</p>
+
+        <h1 class="hero-label">Discover Our  New Collection</h1>
+        <p class="hero-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br />elit
+          tellus, luctus nec ullamcorper mattis.
+        </p>
+
+        <button class="hero-btn">
+          <a href="./detail.html">Buy Now</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- browse section -->
+    <section></section>
+
+    <!-- product section -->
+    <section></section>
+
+    <!-- footer section -->
+    <section></section>
+
+    <!-- scripts -->
+    <script type="module">
+      import { getProdcuts } from "./services/products.js";
+
+      const products = await getProdcuts();
+
+      console.log(products);
+    </script>
+  </body>
+</html>
